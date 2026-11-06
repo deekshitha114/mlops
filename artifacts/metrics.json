@@ -1,0 +1,44 @@
+{
+  "dataset": "Section7_Q4_Ecommerce_Product_Return_CICD.csv",
+  "rows_used": 1200,
+  "target_counts": {
+    "Not Returned": 929,
+    "Returned": 271
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "feature_columns": [
+    "Product_Price_INR",
+    "Discount_Percent",
+    "Expected_Delivery_Days",
+    "Actual_Delivery_Days",
+    "Customer_Rating_PreOrder",
+    "Previous_Returns",
+    "Previous_Orders",
+    "Product_Category",
+    "Payment_Method",
+    "Damaged_Package_Flag",
+    "Package_Size",
+    "Promotion_Active",
+    "Delivery_Delay_Days",
+    "Customer_Return_Frequency"
+  ],
+  "model_metrics": {
+    "logistic_regression": {
+      "accuracy": 0.6083333333333333,
+      "precision_returned": 0.2727272727272727,
+      "recall_returned": 0.4444444444444444,
+      "f1_returned": 0.3380281690140845,
+      "roc_auc": 0.5747710075667065
+    },
+    "random_forest": {
+      "accuracy": 0.7125,
+      "precision_returned": 0.2857142857142857,
+      "recall_returned": 0.18518518518518517,
+      "f1_returned": 0.2247191011235955,
+      "roc_auc": 0.5317602548785344
+    }
+  },
+  "selected_model": "logistic_regression",
+  "selection_metric": "f1_returned (ROC AUC tie-breaker)"
+}

@@ -1,0 +1,9 @@
+.git
+.github
+.pytest_cache
+.ruff_cache
+__pycache__
+tests
+*.py[cod]
+requirements-dev.txt
+Section7_Q4_Ecommerce_Product_Return_CICD.csv
